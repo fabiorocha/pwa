@@ -10,7 +10,7 @@
 	"protocol_handlers": [
 		{
 			"scheme": "web+github",
-			"url": "http://localhost:3000/?profile=%s",
+			"url": "https://fabiorocha.github.io/pwa/?profile=%s",
 			"title": "Github Profile Card",
 			"icon": {
 				"src": "images/catalogicon-44.png",
