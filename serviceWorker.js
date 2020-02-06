@@ -5,24 +5,24 @@ var cacheName = 'cache-v4';
 
 //Files to save in cache
 var files = [
-  './',
-  './index.html?utm=homescreen', //SW treats query string as new request
-  'https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700', //caching 3rd party content
-  './css/styles.css',
-  './images/icons/android-chrome-192x192.png',
-  './images/push-on.png',
-  './images/push-off.png',
-  './images/icons/favicon-16x16.png',
-  './images/icons/favicon-32x32.png',
-  './js/main.js',
-  './js/app.js',
-  './js/offline.js',
-  './js/push.js',
-  './js/sync.js',
-  './js/toast.js',
-  './js/share.js',
-  './js/menu.js',
-  './manifest.json'
+  // './',
+  // './index.html?utm=homescreen', //SW treats query string as new request
+  // 'https://fonts.googleapis.com/css?family=Roboto:200,300,400,500,700', //caching 3rd party content
+  // './css/styles.css',
+  // './images/icons/android-chrome-192x192.png',
+  // './images/push-on.png',
+  // './images/push-off.png',
+  // './images/icons/favicon-16x16.png',
+  // './images/icons/favicon-32x32.png',
+  // './js/main.js',
+  // './js/app.js',
+  // './js/offline.js',
+  // './js/push.js',
+  // './js/sync.js',
+  // './js/toast.js',
+  // './js/share.js',
+  // './js/menu.js',
+  // './manifest.json'
 ];
 
 //Adding `install` event listener
@@ -71,12 +71,12 @@ self.addEventListener('fetch', (event) => {
 
       //if request is not cached or navigation preload response, add it to cache
       return fetch(request).then((response) => {
-        var responseToCache = response.clone();
-        caches.open(cacheName).then((cache) => {
-            cache.put(request, responseToCache).catch((err) => {
-              console.warn(request.url + ': ' + err.message);
-            });
-          });
+        // var responseToCache = response.clone();
+        // caches.open(cacheName).then((cache) => {
+        //     cache.put(request, responseToCache).catch((err) => {
+        //       console.warn(request.url + ': ' + err.message);
+        //     });
+        //   });
 
         return response;
       });
