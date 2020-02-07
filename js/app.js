@@ -26,14 +26,14 @@
   //Add protocol handler event
   registerHandlerBtnElement.addEventListener('click', () => {
     navigator.registerProtocolHandler("web+jngl",
-    "http://localhost:3000/lookup?type=%s",
+    "https://fabiorocha.github.io/pwa/?profile=%s",
     "Jungle handler");
   }, false);
 
   //Remove protocol handler event
   unregisterHandlerBtnElement.addEventListener('click', () => {
     navigator.unregisterProtocolHandler("web+jngl",
-    "http://localhost:3000/lookup?type=%s");
+    "https://fabiorocha.github.io/pwa/?profile=%s");
   }, false);
 
   //To get github user data via `Fetch API`
