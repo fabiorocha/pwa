@@ -3,7 +3,7 @@
 	"short_name": "Demo PWA",
 	"description": "Demo app for progressive web apps",
 	"start_url": "./index.html?utm=homescreen",
-	"display": "browser",
+	"display": "standalone",
 	"orientation": "portrait",
 	"background_color": "#f5f5f5",
 	"theme_color": "#29434d",
