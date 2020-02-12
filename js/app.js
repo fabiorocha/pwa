@@ -5,6 +5,8 @@
   var addCardBtnElement = document.querySelector('.add__btn');
   var registerHandlerBtnElement = document.querySelector('.register__btn');
   var unregisterHandlerBtnElement = document.querySelector('.unregister__btn');
+  var registerHandlerBtnElement2 = document.querySelector('.register__btn2');
+  var unregisterHandlerBtnElement2 = document.querySelector('.unregister__btn2');
   var addCardInputElement = document.querySelector('.add__input');
   var spinnerElement = document.querySelector('.card__spinner');
   var bgSyncTextElement = document.querySelector('.bg-sync__text');
@@ -26,14 +28,27 @@
   //Add protocol handler event
   registerHandlerBtnElement.addEventListener('click', () => {
     navigator.registerProtocolHandler("web+jngl",
-    "https://fabiorocha.github.io/pwa/?profile=%s",
+    "http://localhost:3000/lookup?type=%s",
     "Jungle handler");
   }, false);
 
   //Remove protocol handler event
   unregisterHandlerBtnElement.addEventListener('click', () => {
     navigator.unregisterProtocolHandler("web+jngl",
-    "https://fabiorocha.github.io/pwa/?profile=%s");
+    "http://localhost:3000/lookup?type=%s");
+  }, false);
+
+  //Add protocol handler event
+  registerHandlerBtnElement2.addEventListener('click', () => {
+    navigator.registerProtocolHandler("web+github",
+    "http://localhost:3000/lookup?type=%s",
+    "Jungle handler");
+  }, false);
+
+  //Remove protocol handler event
+  unregisterHandlerBtnElement2.addEventListener('click', () => {
+    navigator.unregisterProtocolHandler("web+github",
+    "http://localhost:3000/lookup?type=%s");
   }, false);
 
   //To get github user data via `Fetch API`
