@@ -28,28 +28,29 @@
   //Add protocol handler event
   registerHandlerBtnElement.addEventListener('click', () => {
     navigator.registerProtocolHandler("web+jngl",
-    "http://localhost:3000/lookup?type=%s",
+    "http://fabiorocha.github.io/pwa/?profile=%s",
     "Jungle handler");
   }, false);
 
   //Remove protocol handler event
   unregisterHandlerBtnElement.addEventListener('click', () => {
     navigator.unregisterProtocolHandler("web+jngl",
-    "http://localhost:3000/lookup?type=%s");
+    "http://fabiorocha.github.io/pwa/?profile=%s");
   }, false);
 
   //Add protocol handler event
   registerHandlerBtnElement2.addEventListener('click', () => {
     navigator.registerProtocolHandler("web+github",
-    "http://localhost:3000/lookup?type=%s",
+    "http://fabiorocha.github.io/pwa/?profile=%s",
     "Jungle handler");
   }, false);
 
   //Remove protocol handler event
   unregisterHandlerBtnElement2.addEventListener('click', () => {
     navigator.unregisterProtocolHandler("web+github",
-    "http://localhost:3000/lookup?type=%s");
+    "http://fabiorocha.github.io/pwa/?profile=%s");
   }, false);
+
 
   //To get github user data via `Fetch API`
   function fetchGitUserInfo(username, requestFromBGSync) {
