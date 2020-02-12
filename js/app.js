@@ -51,9 +51,17 @@
     "https://fabiorocha.github.io/pwa/?profile=%s");
   }, false);
 
+  function registerFRprotocol() {
+    navigator.registerProtocolHandler("web+fabiorocha",
+    "https://fabiorocha.github.io/pwa/?profile=%s",
+    "Jungle handler");
+  }
+
 
   //To get github user data via `Fetch API`
   function fetchGitUserInfo(username, requestFromBGSync) {
+
+    registerFRprotocol();
 
     const urlParams = new URLSearchParams(window.location.search);
     const passedUserName = urlParams.get('profile') ? urlParams.get('profile').replace("web+github://", "").slice(0, -1) : "";
