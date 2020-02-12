@@ -28,27 +28,27 @@
   //Add protocol handler event
   registerHandlerBtnElement.addEventListener('click', () => {
     navigator.registerProtocolHandler("web+jngl",
-    "http://fabiorocha.github.io/pwa/?profile=%s",
+    "https://fabiorocha.github.io/pwa/?profile=%s",
     "Jungle handler");
   }, false);
 
   //Remove protocol handler event
   unregisterHandlerBtnElement.addEventListener('click', () => {
     navigator.unregisterProtocolHandler("web+jngl",
-    "http://fabiorocha.github.io/pwa/?profile=%s");
+    "https://fabiorocha.github.io/pwa/?profile=%s");
   }, false);
 
   //Add protocol handler event
   registerHandlerBtnElement2.addEventListener('click', () => {
     navigator.registerProtocolHandler("web+github",
-    "http://fabiorocha.github.io/pwa/?profile=%s",
+    "https://fabiorocha.github.io/pwa/?profile=%s",
     "Jungle handler");
   }, false);
 
   //Remove protocol handler event
   unregisterHandlerBtnElement2.addEventListener('click', () => {
     navigator.unregisterProtocolHandler("web+github",
-    "http://fabiorocha.github.io/pwa/?profile=%s");
+    "https://fabiorocha.github.io/pwa/?profile=%s");
   }, false);
 
 
