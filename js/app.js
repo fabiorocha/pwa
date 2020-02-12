@@ -35,7 +35,8 @@
   //Remove protocol handler event
   unregisterHandlerBtnElement.addEventListener('click', () => {
     navigator.unregisterProtocolHandler("web+jngl",
-    "https://fabiorocha.github.io/pwa/?profile=%s");
+    "https://fabiorocha.github.io/pwa/?profile=%s",
+    "Jngl handler");
   }, false);
 
   //Add protocol handler event
