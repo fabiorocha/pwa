@@ -21,9 +21,9 @@
   ],
   "file_handlers": [
     {
-      "action": "/simple-text-reader",
+      "action": "https://microsoft.com",
       "accept": {
-        "text/csv": ".txt5"
+        "text/csv": "Not a valid extension"
       }
     },
     {
