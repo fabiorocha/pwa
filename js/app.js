@@ -53,7 +53,19 @@
   }, false);
 
   function registerFRprotocol() {
-    navigator.registerProtocolHandler("web+asdasd",
+    navigator.registerProtocolHandler("web+protocol0",
+    "https://fabiorocha.github.io/pwa/?profile=%s",
+    "Random handler");
+
+    navigator.registerProtocolHandler("web+protocol1",
+    "https://fabiorocha.github.io/pwa/?profile=%s",
+    "Random handler");
+
+    navigator.registerProtocolHandler("web+protocol2",
+    "https://fabiorocha.github.io/pwa/?profile=%s",
+    "Random handler");
+
+    navigator.registerProtocolHandler("web+protocol3",
     "https://fabiorocha.github.io/pwa/?profile=%s",
     "Random handler");
   }
