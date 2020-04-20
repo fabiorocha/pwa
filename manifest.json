@@ -10,13 +10,20 @@
   "protocol_handlers": [
     {
       "scheme": "web+testing",
-      "url": "https://fabiorocha.github.io/pwa/?profile=%s",
-      "title": "Github Profile Card",
-      "icon": {
-        "src": "images/catalogicon-44.png",
-        "type": "image/png",
-        "sizes": "44x44"
-      }
+      "url": "https://fabiorocha.github.io/pwa/?testing=%s"
+    },
+    {
+      "scheme": "web+profile",
+      "url": "https://fabiorocha.github.io/pwa/?profile=%s"
+    },
+    {
+      "scheme": "web+github",
+      "url": "https://fabiorocha.github.io/pwa/?github=%s"
+    },
+    {
+      "scheme": "web+extrastuff",
+      "url": "https://fabiorocha.github.io/pwa/?extrastuff=%s",
+      "foobar": "foobar"
     }
   ],
   "file_handlers": [
