@@ -9,19 +9,19 @@
   "theme_color": "#29434d",
   "protocol_handlers": [
     {
-      "scheme": "web+testing",
+      "protocol": "web+testing",
       "url": "https://fabiorocha.github.io/pwa/?testing=%s"
     },
     {
-      "scheme": "web+profile",
+      "protocol": "web+profile",
       "url": "https://fabiorocha.github.io/pwa/?profile=%s"
     },
     {
-      "scheme": "web+github",
+      "protocol": "web+github",
       "url": "https://fabiorocha.github.io/pwa/?github=%s"
     },
     {
-      "scheme": "web+extrastuff",
+      "protocol": "web+extrastuff",
       "url": "https://fabiorocha.github.io/pwa/?extrastuff=%s",
       "foobar": "foobar"
     }
