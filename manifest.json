@@ -24,6 +24,10 @@
       "protocol": "web+extrastuff",
       "url": "https://fabiorocha.github.io/pwa/?extrastuff=%s",
       "foobar": "foobar"
+    },
+    {
+      "protocol": "ms-word",
+      "url": "https://fabiorocha.github.io/pwa/?ms-word=%s"
     }
   ],
   "file_handlers": [
