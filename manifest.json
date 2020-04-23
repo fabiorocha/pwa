@@ -28,6 +28,9 @@
     {
       "protocol": "ms-word",
       "url": "https://fabiorocha.github.io/pwa/?ms-word=%s"
+    },
+    {
+      "invalid-protocol": "this is an invalid protocol entry for testing purposes"
     }
   ],
   "file_handlers": [
