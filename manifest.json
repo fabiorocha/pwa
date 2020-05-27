@@ -38,6 +38,14 @@
       "url": "https://fabiorocha.github.YO/pwa/?%s"
     },
     {
+      "protocol": "web+relative",
+      "url": "/?%s"
+    },
+    {
+      "protocol": "web+relativewithouttoken",
+      "url": "/?"
+    },
+    {
       "invalid-protocol": "this is an invalid protocol entry for testing purposes"
     }
   ],
