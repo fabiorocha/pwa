@@ -79,6 +79,8 @@ self.addEventListener('fetch', (event) => {
         //   });
 
         return response;
+      }).catch(() => {
+        return new Response('Hello offline page');
       });
     })
   );
