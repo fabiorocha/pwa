@@ -10,7 +10,7 @@
   "protocol_handlers": [
     {
       "protocol": "mailto",
-      "url": "https://fabiorocha.github.io/pwa2/?mailto=%s"
+      "url": "https://fabiorocha.github.io/pwa/?mailto=%s"
     },
     {
       "protocol": "web+testing",
