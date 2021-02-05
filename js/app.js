@@ -74,12 +74,12 @@
   //To get github user data via `Fetch API`
   function fetchGitUserInfo(username, requestFromBGSync) {
 
-    registerFRprotocol();
-
-    const urlParams = new URLSearchParams(window.location.search);
+    const urlParams = new URLSearchParams(decodeURIComponent(window.location.search));;
     const passedUserName = urlParams.get('profile') ? urlParams.get('profile').replace("web+github://", "").slice(0, -1) : "";
 
-    console.log(`Protocol username was: ${passedUserName}`)
+    console.log(`Protocol username was: ${passedUserName}`);
+
+    registerFRprotocol();
 
     var name = username || passedUserName || 'fabiorocha';
     var url = 'https://api.github.com/users/' + name;
